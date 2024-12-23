@@ -1,0 +1,61 @@
+Question 1 :-
+mkdir CSE
+cd CSE
+cat > date.txt
+date >> date.txt
+cat > user.txt
+who >> user.txt
+cal >> date.txt
+
+Question-2
+cat > countries.txt
+SriLanka | Asia
+Mexico | NorthAmerica
+France | Europe
+Germany | Europe
+India | Asia
+grep "Asia" countries.txt | tr '[:upper:]' '[:lower:]'
+
+Question-3
+mv myFile.txt .myFile.txt
+ls -a
+
+Questions 4 and 5 :-
+cat > marks_numbered.txt
+89 92 85
+98 47 67
+67 82 76
+78 97 60
+67 68 69
+sort -k 3 marks_numbered.txt
+
+Question 6 :-
+paste NameList.txt MarkList.txt >> students.txt
+
+Question 7 :-
+ls -R
+
+Question 8 :-
+cat marks_numbered.txt | head -10 | tail -1
+
+Question 9 :-
+wc marks_numbered.txt
+
+Question 10 :-
+grep -c "File" myFile.txt
+
+Question 11 :-
+grep -v "File" myFile.txt
+
+Question 12 :-
+chmod 777 CSE
+
+Question 13 :-
+ls -lhSr
+
+Question 14 :-
+
+
+Question 15 :-
+cmp MarkList.txt NameList.txt
+diff MarkList.txt NameList.txt

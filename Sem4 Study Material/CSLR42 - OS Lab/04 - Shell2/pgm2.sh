@@ -1,0 +1,1 @@
+ls -laS | awk '{ print $2 }'

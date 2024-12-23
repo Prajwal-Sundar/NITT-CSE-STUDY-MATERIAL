@@ -1,0 +1,95 @@
+Question-1
+
+echo -n "Enter base : "
+read B
+echo -n "Enter exponent : "
+read E
+echo "$B to the power of $E is $[$B**$E]"
+
+Question-2
+
+N=10 # number of inputs
+i=1 # loop variable
+sum=0 # sum variable
+
+while [ $i -le $N ]
+do
+  echo -n "Enter number $i : "
+  read num
+  sum=$((sum + num))     
+  i=$((i + 1))
+done
+
+echo "Sum of inputs = $sum"
+echo -n "Average of inputs = "
+
+avg=$(echo $sum / $N | bc -l);
+echo "scale = 3; $avg / 1" | bc -l
+
+Question-3
+
+echo -n "Enter a number : "
+read N
+
+D=N # duplicate number
+s=0 # sum variable
+
+while [ $D -gt 0 ]
+do
+    r=$(($D % 10)) # remainder
+    d=$(($r**3)) # digit power 3
+    s=$((s + d)) # form sum variable
+    D=$((D / 10)) # update number
+done
+
+if [ $s -eq $N ]
+then
+    echo "$N is an armstrong number"
+else
+    echo "$N is not an armstrong number"
+fi
+
+Question-4
+
+echo -n "Enter a number : "
+read N
+echo -n "Divisors are : "
+
+i=1 # loop variable
+while [ $i -le $N ]
+do
+    r=$(($N % $i)) # get reminder
+    if [ r -eq 0 ] # divisor
+    then
+        echo -n "$i "
+    fi
+    i=$((i + 1)) # increment
+done
+
+Question-5
+
+echo -n "Enter a string : "
+read str
+
+c=0 # count variable
+for (( i=0; i<${#str}; i++ )); do
+    case ${str:$i:1} in
+        'a'|'e'|'i'|'o'|'u'|'A'|'E'|'I'|'O'|'U')
+            c=$((c + 1))
+        ;;
+    esac
+done
+
+echo -n "Number of vowels = $c"
+
+Question-6
+
+echo -n "Enter a string : "
+read str
+
+rev=""
+for (( i=0; i<${#str}; i++ )); do
+    rev=${str:$i:1}$rev
+done
+
+echo -n "Reversed string : $rev"

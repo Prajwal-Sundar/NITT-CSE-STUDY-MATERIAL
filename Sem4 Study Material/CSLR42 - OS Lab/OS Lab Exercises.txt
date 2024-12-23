@@ -1,0 +1,12 @@
+OS Lab Exercises
+
+1) 24Jan - OS Lab Exercise 1
+2) 31Jan - OS Lab Exercise 2
+3) 07Feb - Shell Programming 1
+4) 14Feb - Shell Programming 2
+5) 21Feb - Exercise 5 (Process Hierarchy)
+6) 28Feb - CPU Scheduling 1
+7) 07Mar - CPU Scheduling 2
+8) 14Mar - Semaphores
+9) 21Mar - Banker's Algorithm
+10) 28Mar - Memory Management

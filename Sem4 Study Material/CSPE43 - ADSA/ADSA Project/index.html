@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Graph Colouring</title>
+        <link rel = "stylesheet" href = "style.css" />
+        <link rel = "icon" href = "icon.png" />
+    </head>
+
+    <body>
+
+        <div>
+            <h1 class = "center">Timetable Scheduler</h1>
+        </div>
+
+        <div>
+            <canvas id = "shape" width="1000" height="500"></canvas>
+        </div>
+
+        <div class = "row">
+
+            <div class = "col">
+                <h2 class = "center">Subjects</h2>
+                <button class = "button buttonG" id = "addS">+ Add Subject</button>
+                <button class = "button buttonG" id = "add">+ Add Edge</button>
+                <button class = "button buttonG" id = "remove">- Remove Edge</button>
+            </div>
+
+            <div class = "col">
+                <h2 class = "center">Timetable</h2>
+                <table id = "timetable"></table>
+            </div>
+
+        </div>
+
+        <script src = "script.js"></script>
+    </body>
+</html>
